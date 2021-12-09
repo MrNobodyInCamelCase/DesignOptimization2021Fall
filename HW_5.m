@@ -5,11 +5,11 @@
 % (marked by ***). Note that you need to do so for every involved
 % function, i.e., m files. 
 
-%% Optional overhead
+%% Optional overhead %%
 clear; % Clear the workspace
 close all; % Close all windows
 
-%% Optimization settings
+%% Optimization settings %%
 % Here we specify the objective function by giving the function handle to a
 % variable, for example:
 f = @(x) x(1)^2+(x(2)-3)^2; % objective function
@@ -24,7 +24,7 @@ dg = @(x) [-2 2*x(2); 5 2*x(2)-2]; % grad of constraint
 % However, providing these information to the search algorithm will save
 % computational cost from finite difference calculations for them.
 
-% % Specify algorithm
+%% Specify algorithm %%
 opt.alg = 'matlabqp'; % 'myqp' or 'matlabqp'
 
 % Turn on or off line search. You could turn on line search once other
